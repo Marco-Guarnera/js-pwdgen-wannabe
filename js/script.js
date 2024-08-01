@@ -15,7 +15,7 @@ const passwordElement = document.getElementById("password");
 console.log(passwordElement);
 
 // Preparo una variabile di tipo stringa
-const code = "21";
+const suffix = "21";
 
 // Fase di raccolta dati
 
@@ -28,16 +28,16 @@ const lastName = window.prompt("Cognome:", "Guarnera");
 console.log(lastName, typeof lastName);
 
 // Recupero il colore preferito dell'utente tramite prompt e salvo il dato in una variabile
-const color = window.prompt("Colore preferito:", "Arancione");
-console.log(color, typeof color);
+const favColor = window.prompt("Colore preferito:", "Arancione");
+console.log(favColor, typeof favColor);
 
 // Fase di elaborazione
 
 // Costruisco la password concatenando tutti i dati in una variabile
-const password = firstName + lastName + color + code;
+const password = firstName + lastName + favColor + suffix;
 console.log(password);
 
 // Fase di produzione
 
 // Stampo la password
-passwordElement.innerText = password;
+passwordElement.innerText = "Password: " + password;
